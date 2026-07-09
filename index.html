@@ -1,157 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Luis Moreno</title>
+  <title>Luis Moreno | Sitio Oficial</title>
+  <meta name="description" content="Sitio oficial de Luis Moreno, Subsecretario de Tierras y Escrituración Social en General Rodríguez." />
 
-<style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
+    body {
+      background: #f4f4f1;
+      color: #222;
+      line-height: 1.6;
+    }
 
-body{
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-background:#f5f5f5;
-color:#333;
+    .hero {
+      background: white;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
 
-display:flex;
-justify-content:center;
-align-items:center;
+    .hero img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
 
-height:100vh;
+    .content {
+      padding: 45px;
+      text-align: center;
+    }
 
-}
+    .label {
+      display: inline-block;
+      background: #eef3ff;
+      color: #234c8c;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-bottom: 18px;
+      font-weight: bold;
+    }
 
-.card{
+    h1 {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
 
-background:white;
-width:650px;
-max-width:92%;
+    h2 {
+      font-size: 20px;
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
 
-padding:50px;
+    p {
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto 20px;
+      color: #444;
+    }
 
-border-radius:16px;
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-box-shadow:0 10px 30px rgba(0,0,0,.10);
+    .btn {
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+    }
 
-text-align:center;
+    .primary {
+      background: #1f4f8f;
+      color: white;
+    }
 
-}
+    .secondary {
+      background: #eeeeee;
+      color: #222;
+    }
 
-img{
+    .info {
+      margin-top: 40px;
+      color: #666;
+      font-size: 15px;
+    }
 
-width:170px;
-height:170px;
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      color: #777;
+      font-size: 14px;
+    }
 
-border-radius:50%;
+    @media (max-width: 700px) {
+      .hero img {
+        height: 300px;
+      }
 
-object-fit:cover;
+      .content {
+        padding: 30px 22px;
+      }
 
-margin-bottom:25px;
+      h1 {
+        font-size: 34px;
+      }
 
-}
-
-h1{
-
-font-size:38px;
-
-margin-bottom:20px;
-
-}
-
-p{
-
-font-size:18px;
-
-line-height:1.7;
-
-margin-bottom:20px;
-
-}
-
-.contacto{
-
-margin-top:35px;
-
-}
-
-.contacto a{
-
-display:block;
-
-margin-top:10px;
-
-color:#0056b3;
-
-text-decoration:none;
-
-}
-
-footer{
-
-margin-top:40px;
-
-font-size:14px;
-
-color:#888;
-
-}
-
-</style>
-
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="card">
+  <main class="container">
+    <section class="hero">
+      <img src="PORTADA.jpg" alt="Luis Moreno">
 
-<img src="https://via.placeholder.com/170" alt="Luis Moreno">
+      <div class="content">
+        <span class="label">Sitio oficial</span>
 
-<h1>Luis Moreno</h1>
+        <h1>Luis Moreno</h1>
 
-<p>
+        <h2>Subsecretario de Tierras y Escrituración Social</h2>
 
-Este sitio constituye el canal oficial de información y contacto de Luis Moreno.
+        <p>
+          Luis Moreno desarrolla actividades vinculadas al trabajo territorial,
+          la regularización dominial y el acompañamiento a vecinos y vecinas de
+          General Rodríguez.
+        </p>
 
-</p>
+        <p>
+          Este sitio constituye su canal oficial de información y contacto.
+          Aquí se publicará información institucional y contenidos de interés
+          para la comunidad.
+        </p>
 
-<p>
+        <div class="buttons">
+          <a class="btn primary" href="mailto:contacto@luismoreno.online">
+            Enviar correo
+          </a>
 
-Aquí se publicará información institucional y contenidos de interés para la comunidad de General Rodríguez.
+          <a class="btn secondary" href="https://instagram.com/luisemoreno_" target="_blank">
+            Instagram
+          </a>
+        </div>
 
-</p>
+        <div class="info">
+          General Rodríguez, Buenos Aires<br>
+          contacto@luismoreno.online
+        </div>
+      </div>
+    </section>
 
-<div class="contacto">
-
-<strong>Contacto</strong>
-
-<a href="mailto:contacto@luismoreno.online">
-
-contacto@luismoreno.online
-
-</a>
-
-<a href="https://instagram.com/luisemoreno_" target="_blank">
-
-Instagram
-
-</a>
-
-</div>
-
-<footer>
-
-© 2026 Luis Moreno
-
-</footer>
-
-</div>
+    <footer>
+      © 2026 Luis Moreno. Todos los derechos reservados.
+    </footer>
+  </main>
 
 </body>
 </html>
