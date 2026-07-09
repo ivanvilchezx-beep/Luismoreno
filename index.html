@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Luis Moreno | Sitio Oficial</title>
-  <meta name="description" content="Sitio oficial de Luis Moreno, Subsecretario de Tierras y Escrituración Social en General Rodríguez." />
+  <title>Luis Emilio Moreno | Sitio Oficial</title>
+  <meta name="description" content="Sitio oficial de Luis Emilio Moreno, Subsecretario de Tierras y Escrituración Social de la Municipalidad de General Rodríguez.">
 
   <style>
     * {
@@ -16,120 +16,233 @@
     }
 
     body {
-      background: #f4f4f1;
-      color: #222;
+      background: #f3f5f7;
+      color: #1f2933;
       line-height: 1.6;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 32px 20px;
+    }
+
+    header {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 22px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+    }
+
+    .site-label {
+      font-size: 14px;
+      color: #4b5563;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .08em;
     }
 
     .hero {
-      background: white;
-      border-radius: 22px;
+      background: #ffffff;
+      border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
     }
 
-    .hero img {
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 520px;
+    }
+
+    .hero-image img {
       width: 100%;
-      height: 430px;
+      height: 100%;
       object-fit: cover;
       display: block;
     }
 
-    .content {
-      padding: 45px;
-      text-align: center;
+    .hero-content {
+      padding: 54px 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .label {
+    .badge {
       display: inline-block;
-      background: #eef3ff;
-      color: #234c8c;
-      padding: 8px 18px;
-      border-radius: 30px;
+      background: #e8f2ff;
+      color: #1f5f99;
+      padding: 8px 16px;
+      border-radius: 999px;
       font-size: 14px;
-      margin-bottom: 18px;
       font-weight: bold;
+      margin-bottom: 20px;
+      width: fit-content;
     }
 
     h1 {
-      font-size: 44px;
-      margin-bottom: 10px;
+      font-size: 46px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      color: #111827;
     }
 
-    h2 {
-      font-size: 20px;
-      color: #555;
-      font-weight: normal;
-      margin-bottom: 30px;
+    .role {
+      font-size: 22px;
+      color: #1f5f99;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .profession {
+      font-size: 19px;
+      color: #4b5563;
+      margin-bottom: 26px;
     }
 
     p {
-      font-size: 18px;
-      max-width: 760px;
-      margin: 0 auto 20px;
-      color: #444;
+      font-size: 17px;
+      color: #374151;
+      margin-bottom: 18px;
     }
 
     .buttons {
-      margin-top: 35px;
       display: flex;
-      gap: 14px;
-      justify-content: center;
+      gap: 12px;
       flex-wrap: wrap;
+      margin-top: 22px;
     }
 
     .btn {
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 8px;
-      font-weight: bold;
       display: inline-block;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 15px;
     }
 
     .primary {
-      background: #1f4f8f;
+      background: #1f5f99;
       color: white;
     }
 
     .secondary {
-      background: #eeeeee;
-      color: #222;
+      background: #eef2f6;
+      color: #1f2933;
     }
 
-    .info {
-      margin-top: 40px;
-      color: #666;
-      font-size: 15px;
+    .section {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 38px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 18px;
+      color: #111827;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #1f5f99;
+    }
+
+    .contact-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .contact-item {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 16px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .contact-item a {
+      color: #1f5f99;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
       text-align: center;
-      margin-top: 35px;
-      color: #777;
+      color: #6b7280;
       font-size: 14px;
+      padding: 22px;
     }
 
-    @media (max-width: 700px) {
-      .hero img {
-        height: 300px;
+    @media (max-width: 850px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
       }
 
-      .content {
-        padding: 30px 22px;
+      .hero-image img {
+        height: 360px;
+      }
+
+      .hero-content {
+        padding: 36px 26px;
       }
 
       h1 {
-        font-size: 34px;
+        font-size: 36px;
       }
 
-      p {
-        font-size: 16px;
+      .cards,
+      .contact-list {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .logo {
+        max-width: 240px;
       }
     }
   </style>
@@ -137,50 +250,125 @@
 
 <body>
 
-  <main class="container">
-    <section class="hero">
-      <img src="PORTADA.jpg" alt="Luis Moreno">
+  <div class="container">
 
-      <div class="content">
-        <span class="label">Sitio oficial</span>
+    <header>
+      <img class="logo" src="images.jpeg" alt="Municipalidad de General Rodríguez">
+      <div class="site-label">Sitio oficial</div>
+    </header>
 
-        <h1>Luis Moreno</h1>
-
-        <h2>Subsecretario de Tierras y Escrituración Social</h2>
-
-        <p>
-          Luis Moreno desarrolla actividades vinculadas al trabajo territorial,
-          la regularización dominial y el acompañamiento a vecinos y vecinas de
-          General Rodríguez.
-        </p>
-
-        <p>
-          Este sitio constituye su canal oficial de información y contacto.
-          Aquí se publicará información institucional y contenidos de interés
-          para la comunidad.
-        </p>
-
-        <div class="buttons">
-          <a class="btn primary" href="mailto:contacto@luismoreno.online">
-            Enviar correo
-          </a>
-
-          <a class="btn secondary" href="https://instagram.com/luisemoreno_" target="_blank">
-            Instagram
-          </a>
+    <main class="hero">
+      <div class="hero-grid">
+        <div class="hero-image">
+          <img src="PORTADA.jpg" alt="Luis Emilio Moreno">
         </div>
 
-        <div class="info">
-          General Rodríguez, Buenos Aires<br>
-          contacto@luismoreno.online
+        <div class="hero-content">
+          <span class="badge">Municipalidad de General Rodríguez</span>
+
+          <h1>Luis Emilio Moreno</h1>
+
+          <div class="role">Subsecretario de Tierras y Escrituración Social</div>
+          <div class="profession">Abogado</div>
+
+          <p>
+            Este sitio constituye el canal oficial de información y contacto de
+            Luis Emilio Moreno, Subsecretario de Tierras y Escrituración Social
+            de la Municipalidad de General Rodríguez.
+          </p>
+
+          <p>
+            Aquí se publicará información institucional, novedades y contenidos
+            de interés para la comunidad.
+          </p>
+
+          <div class="buttons">
+            <a class="btn primary" href="mailto:contacto@luismoreno.online">Enviar correo</a>
+            <a class="btn secondary" href="https://instagram.com/luisemoreno_" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section">
+      <h2>Sobre Luis Moreno</h2>
+      <p>
+        Luis Emilio Moreno desarrolla actividades vinculadas al trabajo territorial,
+        la regularización dominial y el acompañamiento a vecinos y vecinas de
+        General Rodríguez.
+      </p>
+      <p>
+        Su labor se orienta a fortalecer el acceso a la información, el asesoramiento
+        institucional y la articulación con la comunidad en temas relacionados con
+        tierras y escrituración social.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Áreas de trabajo</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Regularización dominial</h3>
+          <p>
+            Acompañamiento institucional en procesos vinculados a la situación
+            dominial de viviendas y terrenos.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Escrituración social</h3>
+          <p>
+            Información y orientación para vecinos en trámites relacionados con
+            la escrituración.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Atención a la comunidad</h3>
+          <p>
+            Espacio de contacto para consultas, información institucional y
+            comunicación con vecinos de General Rodríguez.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contacto</h2>
+      <p>
+        Para consultas institucionales o información, podés comunicarte a través
+        de los siguientes canales oficiales.
+      </p>
+
+      <div class="contact-list">
+        <div class="contact-item">
+          <strong>Correo electrónico</strong>
+          <a href="mailto:contacto@luismoreno.online">contacto@luismoreno.online</a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Teléfono</strong>
+          <a href="tel:+541178229392">+54 11 7822-9392</a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Instagram</strong>
+          <a href="https://instagram.com/luisemoreno_" target="_blank">@luisemoreno_</a>
+        </div>
+
+        <div class="contact-item">
+          <strong>Ubicación</strong>
+          General Rodríguez, Buenos Aires
         </div>
       </div>
     </section>
 
     <footer>
-      © 2026 Luis Moreno. Todos los derechos reservados.
+      © 2026 Luis Emilio Moreno · Municipalidad de General Rodríguez
     </footer>
-  </main>
+
+  </div>
 
 </body>
 </html>
